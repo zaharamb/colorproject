@@ -16,7 +16,7 @@ def random_color():
 
 for character in text:
     if character == " ":
-        squares_html += '<div class="space"></div>'
+        squares_html += '<div class="square" style="background:rgb(254,254,254)"></div>'
     else:
         # If the letter doesn't have a color yet
         # (best to do it that way rather than having 26 lines, one for each 26 letters)
@@ -37,17 +37,12 @@ html = f"""<!doctype html>
     .square {{
     width: 20px;
     height: 20px;
-    /* background: black; */
-    margin-right: 0px;
-    }}
-
-    .space {{
-    width: 20px; /* same size as .square */
-    height: 20px;
+    flex: 0 0 20px; /* flex-grow, flex-shrink, flex-basis: base must be 20px */
     }}
 
     .container {{
     display: flex; /* Not relevant to put it in the .square class: because we want to assign the layout of the squares between them, not the squares themselves */
+    flex-wrap: wrap; /* allow line breaks */
     }}
   </style>
 
