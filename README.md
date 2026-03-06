@@ -1,23 +1,35 @@
 # colorproject
 
-This project encrypts text into a series of coloured squares and is heavily inspired by the work of <a href="https://www.christianfaur.com/color/">Christian Faur</a>.
+This project encrypts text into a series of colored squares and is heavily inspired by the work of <a href="https://www.christianfaur.com/color/">Christian Faur</a>.
 
 The programme is case sensitive (‘a’ and ‘A’ are treated as two different letters) and accepts all other characters: numbers, symbols, etc.
 
 There are currently two encryption methods available:
-1. Letter-colour dictionary (e.g. all ‘e’s will be indigo green, etc.). Colours are assigned randomly.
-2. Each character has its own colour (e.g. there will be red, green, blue ‘e’s, etc.). Colours are determined randomly.
+1. Letter-color dictionary (e.g. all ‘e’s will be indigo green, etc.). Colors are assigned randomly.
+2. Each character has its own color (e.g. there will be red, green, blue ‘e’s, etc.). Colors are determined randomly.
+3. Reference name: the closer a letter is to a letter in the reference name, the closer its color will be to the color associated with that name. Colors are determined randomly.
 
 There are currently two styles available:
-1. Basic: each box is a solid colour.
-2. Linear gradient: each box is coloured with a linear gradient, the angle of which is determined randomly.
+1. Basic: each box is a solid color.
+2. Linear gradient: each box is colored with a linear gradient, the angle of which is determined randomly.
 
 Tip: resize the page to change how many lines the result is written on.
 
-<h2>Example</h2>
+<h2>Examples</h2>
+
+Translation of:
 
 <img width="487" height="23" alt="Capture d’écran 2026-03-03 à 02 16 30" src="https://github.com/user-attachments/assets/f119d60b-8cd3-4fe7-b83e-ac0a571b9b61" />
+
+Method 1 (Color dictionary), Style 2 (Linear gradient)
 <img width="979" height="40" alt="Capture d’écran 2026-03-03 à 02 15 49" src="https://github.com/user-attachments/assets/d23c77c9-3555-462c-a81a-b06dc180bb8b" />
+
+Method 2 (Pure random), Style 1 (Plain)
+<img width="979" height="40" alt="Capture d’écran 2026-03-06 à 21 10 07" src="https://github.com/user-attachments/assets/8c86ea92-772c-469e-a82c-1d12d537c20a" />
+
+Method 3 (Reference name), Style 1 (Plain): translation of "abcdefghijklmnopqrstuvwxyz" with "h" as a reference name, associeted with 🟪 deep purple (RGB 105, 0, 207).
+
+<img width="715" height="39" alt="Capture d’écran 2026-03-06 à 21 11 56" src="https://github.com/user-attachments/assets/d24d9f3f-6d25-42ff-82b1-4fb19f75e4bc" />
 
 
 <h2>How to use</h2>
