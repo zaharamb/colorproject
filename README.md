@@ -1,4 +1,4 @@
-# colorproject
+# textcolor
 
 This project encrypts text into a series of colored squares and is heavily inspired by the work of <a href="https://www.christianfaur.com/color/">Christian Faur</a>.
 

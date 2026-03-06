@@ -58,9 +58,9 @@ def color_from_ref_distance(x: str, ref_map: dict[str, tuple[int,int,int]], styl
 
 
 print("\nWhich translation method would you prefer?\n"
-        "1: Colour dictionary (e.g. all ‘e’s will be green)\n"
+        "1: Color dictionary (e.g. all ‘e’s will be green)\n"
         "2: Pure random (e.g. there will be green, red, etc. ‘e’s)\n"
-        "3: Reference name (the closer a letter is to a letter in the reference name, the closer its colour will be to the colour associated with that name)")
+        "3: Reference name (the closer a letter is to a letter in the reference name, the closer its color will be to the color associated with that name)")
 while True:
     method = input("Your choice (1, 2, 3): ")
     if method in ("1", "2", "3"):
@@ -147,7 +147,7 @@ html = f"""<!doctype html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>colorproject</title>
+  <title>textcolor</title>
 
   <style>
     .square {{
@@ -176,9 +176,9 @@ html = f"""<!doctype html>
 </html>
 """
 
-p = Path("colorproject.html")
+p = Path("textcolor.html")
 p.write_text(html, encoding="utf-8")
 if p.exists():
-    print("OK: colorproject.html created")
+    print("OK: textcolor.html created")
 else:
     print("Error")
